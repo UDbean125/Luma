@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "owner": "hh-solutions",
+    "name": "Luma",
+    "slug": "luma",
+    "version": "1.0.0",
+    "description": "Mobile app for scene intelligence workflows.",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "luma",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.hensolutions.luma",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.hensolutions.luma",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#000000"
+          }
+        }
+      ],
+      "expo-video"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "f91d7a60-5a7e-454d-a690-c53b89ecece7"
+      }
+    }
+  }
+}
